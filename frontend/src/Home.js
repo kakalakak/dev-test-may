@@ -1,3 +1,9 @@
+import { NewTweetForm } from "./NewTweetForm";
+
 export function Home() {
-  return <div>Hello world!</div>;
+  return (
+    <div>
+      <NewTweetForm />
+    </div>
+  );
 }
