@@ -10,5 +10,14 @@ install:
 venv:
 	$(PYTHON) -m virtualenv venv  --python=$(PYTHON)
 
+.PHONY: spacy
 spacy:
 	./venv/bin/python -m spacy download en_core_web_lg
+
+.PHONY: run
+run:
+	./venv/bin/python manage.py runserver
+
+.PHONY: migrate
+migrate:
+	./venv/bin/python manage.py migrate
