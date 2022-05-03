@@ -12,3 +12,7 @@ venv:
 
 spacy:
 	./venv/bin/python -m spacy download en_core_web_lg
+
+.PHONY: run
+run:
+	./venv/bin/python manage.py runserver
