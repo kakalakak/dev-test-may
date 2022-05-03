@@ -19,7 +19,7 @@ export function NewTweetForm() {
           marginBottom: 16,
         }}
         value={value}
-        onChange={(e) => setState(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
       />
       <button
         disabled={isLoading || !value}
