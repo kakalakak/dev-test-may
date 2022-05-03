@@ -23,7 +23,7 @@ export const Tueet = (props) => {
         }}
       >
         {props.tueet.related_tweets.map((rt) => (
-          <Link key={rt.id} to={`/tweet/${rt.id}`}>
+          <Link key={rt.id} to={`/tweet/${rt.id}/`}>
             {rt.body}
           </Link>
         ))}

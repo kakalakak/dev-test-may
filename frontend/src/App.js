@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/tweet/:id/" element={<Home />} />
       </Routes>
     </div>
   );
