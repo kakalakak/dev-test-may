@@ -19,7 +19,8 @@ from rest_framework import routers
 from tweets import views
 
 router = routers.DefaultRouter()
-router.register(r'tweet', views.TweetViewSet)
+router.register(r'tweet', views.TweetViewSet, basename='tweets')
+# router.register(r'random', views.RandomViewSet,basename ='random')
 # router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
